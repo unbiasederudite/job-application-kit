@@ -9,8 +9,10 @@ Searches `fact-base.md` for a specific query and returns everything true that ma
 
 ## Inputs
 
-- `data/fact-base.md` — the user's career record. Expect one heading per role/project so every fact is citable to a specific section. If it's unstructured, ask the user to add headings before citing anything from it.
+- `data/fact-base.md` — the user's career record, maintained manually. Expect one heading per role/project so every fact is citable to a specific section. If it's unstructured, ask the user to add headings before citing anything from it — a citation that just says "somewhere in fact-base.md" isn't verifiable.
 - A query: a topic, an entry name, or a specific gap to fill (e.g. "Acme Corp internship, anything not already used elsewhere," "Docker experience," "one more skill for the Tools category").
+
+If `fact-base.md` is missing, stop and tell the user to run `interviewer` first — don't search for material that was never recorded.
 
 ## What to produce
 
@@ -25,3 +27,7 @@ Search the *entire* file for the query, not just the first match. Return every t
 Or, if nothing matches: `No matching material found in fact-base.md.`
 
 Quote or lightly paraphrase for brevity, never improve — whoever's asking decides what to do with a flat fact, not this skill. Every line needs its `[source: ...]` citation; if you can't cite it, don't include it.
+
+## After lookup
+
+Report the results exactly as shown above and stop — deciding what to do with a flat fact isn't this skill's job.
