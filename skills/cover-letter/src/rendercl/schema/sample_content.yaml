@@ -1,0 +1,34 @@
+cl:
+  sender:
+    name: John Doe
+    address: San Francisco, CA
+    phone: 
+    email: john.doe@email.com
+  recipient:
+    name:
+    title: Hiring Manager
+    company: Acme Corp
+    address: 123 Market St, San Francisco, CA
+  salutation: Dear Hiring Manager,
+  closing: Sincerely,
+  body: 
+    - Welcome to RenderCL!
+    - RenderCL reads a cover letter written in a YAML file, and generates a PDF with professional typography.
+design:
+  typography:
+    font_family: Source Sans 3
+    font_size: 11pt
+  phone_number_format: international
+  page:
+    size: a4
+    margins:
+      top: 1in
+      bottom: 1in
+      left: 1in
+      right: 1in
+settings:
+  current_date: today
+  render_command:
+    output_folder: rendercl_output
+    typst_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CL.typ
+    pdf_path: OUTPUT_FOLDER/NAME_IN_SNAKE_CASE_CL.pdf
