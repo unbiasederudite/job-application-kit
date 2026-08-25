@@ -1,0 +1,13 @@
+{
+  "name": "job-application-kit",
+  "owner": {
+    "name": "Mykhailo Stasiuk",
+    "email": "erudite1854@proton.me"
+  },
+  "plugins": [
+    {
+      "name": "job-application-kit",
+      "source": "./"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "job-application-kit",
+  "displayName": "Job Application Kit",
+  "description": "Build up a career fact-base, analyze a job posting, tailor a CV to it, and write a matching cover letter — one application at a time, all as local files.",
+  "author": {
+    "name": "Mykhailo Stasiuk",
+    "email": "erudite1854@proton.me"
+  },
+  "license": "MIT"
+}
